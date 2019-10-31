@@ -86,8 +86,8 @@ li:first-child {
 }
 
 /* Giving the .table element margin on 3 sides */
-.table {
-
+.dataframe th {
+  font-weight: bold;
 }
 
 #nav-select {

@@ -86,7 +86,11 @@ li:first-child {
 }
 
 /* Giving the .table element margin on 3 sides */
-.dataframe th {
+.dataframe {
+  padding: 10px;
+}
+
+.dataframe thead th {
   font-weight: bold;
 }
 

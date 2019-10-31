@@ -85,11 +85,9 @@ li:first-child {
   text-align: center;
 }
 
-/* Giving the .post element margin on 3 sides */
-.post {
-  margin-top: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
+/* Giving the .table element margin on 3 sides */
+.table {
+
 }
 
 #nav-select {

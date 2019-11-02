@@ -16,12 +16,14 @@ body {
 
 h1 {
   padding: 10px;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   font-weight: bold;
 }
 
 h2 {
-  padding: 10px;
+  padding: 5px;
+  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   font-weight: bold;
 }
@@ -34,13 +36,12 @@ h3 {
 .navbar {
   padding: 10px;
   background: #5191fd;
-  text-align: center;
 }
 
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar li {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
@@ -50,8 +51,8 @@ h3 {
   text-align: center;
 }
 
-li:first-child {
-  margin-left: 0;
+li:last-child {
+  margin-right: 0;
 }
 
 /* Getting rid of the default link styles here */
@@ -66,6 +67,8 @@ li:first-child {
 }
 
 .png-titles {
+  padding 5px;
+  font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: bold;
 }
@@ -84,26 +87,40 @@ li:first-child {
   color: #000;
   text-align: center;
 }
-
-/* Giving the .table element margin on 3 sides */
+/* Decide about padding for the dataframe*/
 .dataframe {
-  padding: 10px;
+  padding: 0px;
 }
-
+/* Give the .dataframe bold titles */
 .dataframe thead th {
   font-weight: bold;
 }
 
+.container {
+  margin-top: 10px;
+}
+.container img {
+    display: inline-block;
+    }
+}
 #nav-select {
   visibility: hidden;
 }
 
 /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
-@media (max-width: 480px) {
+@media (max-width: 120px) {
   .navbar li {
     padding: 20px;
   }
 
+  .container row col {
+    padding:10px;
+  }
+
+  .col-md-6 {
+    display: inline-block;
+    padding: 10px;
+  }
   .post {
     margin-right: 30px;
     margin-left: 30px;

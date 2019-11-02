@@ -18,7 +18,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="visualizations.html">Visualizations</a>
+                    <a href="visualizations.html">Plots</a>
                 </li>
                 <li>
                     <a href="comparisons.html">Comparisons</a>
@@ -30,18 +30,21 @@
         </nav>
     <section>
         <h2>Comparisons</h2> 
-
-        <article>
-        <a target="_blank" href="Resources/assets:images/Presidential_term_Daily_Close.png">
-            <img src="Resources/assets:images/Presidential_term_Daily_Close.png" alt="Daily Close">
-        </a>
-        <p><em>Daily Close</em></p>
-        </article>
-        <hr>
-
+        <div class="container">
+            <span>Stocks by the Day: 1. Close  2. Change (=Close minus Open) </span>
+            <div class="row">
+                <div class="col-md-6">
+                Daily Close
+                <img src="Resources/assets:images/Presidential_term_Daily_Close.png" alt="Daily Close">
+                </div>
+                <div class="col-md-6">
+                Daily Change
+                <img src="Resources/assets:images/Presidential_term_Daily_Change.png" alt="Daily Change">
+                </div>
+            </div>
         <article>
         <a target="_blank" href="Resources/assets:images/Presidential_term_Daily_Change.png">
-            <img src="Resources/assets:images/Presidential_term_Daily_Change.png" alt="Daily Change">
+            <img class="col-12 col-md-6" src="Resources/assets:images/Presidential_term_Daily_Change.png" alt="Daily Change">
         </a>
         <p><em>Daily Change</em></p>
         </article>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-08">
+    <title>Brute Force Project 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <h1>Brute Force Project 1</h1>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="comparisons.html">Comparisons</a>
+                </li>
+                <li>
+                    <a href="data.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="daily_close.html">Daily Close</a>
+                          <a class="dropdown-item" href="daily_change.html">Daily Change</a>
+                          <a class="dropdown-item" href="percent_positive_close_days.html">Barchart: Percent Positive Close Days</a>
+                          <a class="dropdown-item" href="boxplot_election_to_inauguration.html">Boxplot: Dow Jones Daily Change from Election to Inauguration</a>
+                          <a class="dropdown-item" href="boxplot_presidential_terms.html">Boxplot: Dow Jones Daily Change by Presidential Term</a>
+                      </div>
+                </li>
+            </ul>
+        </nav>
+    <section>
+        <h2>Boxplot: Presidential Terms</h2> 
+        <p> This box plot (also known as box and whiskers) is laid out for the term of each President in chronological order
+            from President H.W.Bush through President Donald Trump. The far right shows the Dow Jones Index
+            from January 3, 2010 through September 27, 2019.
+        </p>
+        <p>The dark green boxes display the 50th percentile of data with the light green line representing the mean.
+        </p>  
+        <p>The whiskers indicate the 75th percentile on the top and the 25th percentile on the bottom.
+        </p>   
+        <p>The black circles are the outliers.
+        </p> 
+        <p>Because the means, the box sizes, and the whiskers are relatvely the same across all these 
+           President's terms and also with the Dow Jones index for the (almost) 20 year history,
+           the conclusion is that the President doesn't measureably affect the stock market.
+        </p> 
+            
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <img src="Resources/assets:images/Presidential_Term_boxplot.png" alt="Daily Close">
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>

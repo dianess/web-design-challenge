@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-08">
     <title>Brute Force Project 1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <h1>Brute Force Project 1</h1>
 </head>
@@ -15,7 +15,7 @@
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
                     <a href="comparisons.html">Comparisons</a>
@@ -23,18 +23,18 @@
                 <li>
                     <a href="data.html">Data</a>
                 </li>
-                <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Plots
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="daily_close.html">Daily Close</a>
-                          <a class="dropdown-item" href="daily_change.html">Daily Change</a>
-                          <a class="dropdown-item" href="percent_positive_close_days.html">Barchart: Percent Positive Close Days</a>
-                          <a class="dropdown-item" href="boxplot_election_to_inauguration.html">Boxplot: Dow Jones Daily Change from Election to Inauguration</a>
-                          <a class="dropdown-item" href="boxplot_presidential_terms.html">Boxplot: Dow Jones Daily Change by Presidential Term</a>
-                      </div>
-                </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn">Plots</a>
+                            <div class="dropdown-content">
+                                <a href="daily_close.html">Daily Close</a>
+                                <a href="daily_change.html">Daily Change</a>
+                                <a href="boxplot_election_to_inauguration.html">Box Plot: Election to Inauguration</a>
+                                <a href="boxplot_presidential_terms.html">Box Plot: Presidential Terms</a>
+                                <a href="percent_positive_close_days.html">Percent Positive Close Days</a>
+                            </div>
+                        </div>
+                    </li>   
             </ul>
         </nav>
     <section>
@@ -57,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                <img src="Resources/assets:images/Presidential_Term_boxplot.png" alt="Daily Close">
+                <img class="img fluid" src="Resources/assets:images/Presidential_Term_boxplot.png" alt="Daily Close">
                 </div>
             </div>
     </section>

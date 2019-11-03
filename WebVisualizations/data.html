@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-08">
     <title>Brute Force Project 1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <h1>Brute Force Project 1</h1>
 </head>
@@ -24,15 +24,30 @@
                     <a href="data.html">Data</a>
                 </li>
                 <li>
-                    <a href="visualizations.html">Plots</a>
+                  <div class="dropdown">
+                    <a class="dropbtn">Plots</a>
+                      <div class="dropdown-content">
+                        <a href="daily_close.html">Daily Close</a>
+                        <a href="daily_change.html">Daily Change</a>
+                        <a href="boxplot_election_to_inauguration.html">Box Plot: Election to Inauguration</a>
+                        <a href="boxplot_presidential_terms.html">Box Plot: Presidential Terms</a>
+                        <a href="percent_positive_close_days.html">Percent Positive Close Days</a>
+                      </div>
+                  </div>
                 </li>
             </ul>
         </nav>
     <section>
         <h2>Data</h2> 
+        <p> This data was pulled from Alpha Vantage using an API. 
+            The data includes the Dow Jones Industrial Average Index opening stock price, 
+            the high and low for each day, the closing stock price, and the volume 
+            for the dates from January 20, 2001 through September 27, 2019. This is 
+            the data that was used for all of the plots included on this website.
+        </p>    
         <div class="table-responsive-sm">
         <table class="table dataframe table-hover">
-        <thead>
+        <thead class="table-head">
             <th>Date</th>
             <th>Open</th>
             <th>High</th>

@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-08">
     <title>Brute Force Project 1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <h1>Brute Force Project 1</h1>
 </head>
@@ -15,7 +15,7 @@
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
                     <a href="comparisons.html">Comparisons</a>
@@ -24,14 +24,23 @@
                     <a href="data.html">Data</a>
                 </li>
                 <li>
-                    <a href="visualizations.html">Plots</a>
+                    <div class="dropdown">
+                        <a class="dropbtn">Plots</a>
+                        <div class="dropdown-content">
+                            <a href="daily_close.html">Daily Close</a>
+                            <a href="daily_change.html">Daily Change</a>
+                            <a href="boxplot_election_to_inauguration.html">Box Plot: Election to Inauguration</a>
+                            <a href="boxplot_presidential_terms.html">Box Plot: Presidential Terms</a>
+                            <a href="percent_positive_close_days.html">Percent Positive Close Days</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
     <section>
         <h2>Comparisons</h2> 
+
         <div class="container">
-            <span>Stocks by the Day: 1. Close  2. Change (=Close minus Open) </span>
             <div class="row">
                 <div class="col-md-6">
                 Daily Close
@@ -39,46 +48,38 @@
                 <img class="img-fluid" src="Resources/assets:images/Presidential_term_Daily_Close.png" alt="Daily Close">
                 </div>
                 
-               
                 <div class="col-md-6">
                 Daily Change
             
                 <img class="img-fluid" src="Resources/assets:images/Presidential_term_Daily_Change.png" alt="Daily Change">
-                </div>
-                
-
+                </div>                
             </div>
-        <article>
-        <a target="_blank" href="Resources/assets:images/Presidential_term_Daily_Change.png">
-            <img class="col-12 col-md-6" src="Resources/assets:images/Presidential_term_Daily_Change.png" alt="Daily Change">
-        </a>
-        <p><em>Daily Change</em></p>
-        </article>
-        <hr>
+        </div>
 
-        <article>
-        <a target="_blank" href="Resources/assets:images/Percent_Positive_Close_Days.png">
-            <img src="Resources/assets:images/Percent_Positive_Close_Days.png" alt="Percent Positive Close Days">
-        </a>
-        <p><em>Percent Positive Close Days</em></p>
-        </article>
-        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                Dow Jones Daily Change from Election to Inauguration
 
-        <article>
-        <a target="_blank" href="Resources/assets:images/Election_to_Inauguration_boxplot.png">
-            <img src="Resources/assets:images/Election_to_Inauguration_boxplot.png" alt="Dow Jones Daily Change from Election to Inauguration">
-        </a>
-        <p><em>Dow Jones Daily Change from Election to Inauguration</em></p>
-        </article>
-        <hr>
+                <img class="img-fluid" src="Resources/assets:images/Election_to_Inauguration_boxplot.png" alt="Dow Jones Daily Change from Election to Inauguration">
+                </div>
 
-        <article>
-        <a target="_blank" href="Resources/assets:images/Presidential_Term_boxplot.png">
-            <img src="Resources/assets:images/Presidential_Term_boxplot.png" alt="Dow Jones Daily Change by Presidential Term">
-        </a>
-        <p><em>Dow Jones Daily Change by Presidential Term</em></p>
-        </article>
-        <hr>
+                <div class="col-md-6">
+                Dow Jones Daily Change by Presidential Term
+
+                <img class="img-fluid" src="Resources/assets:images/Presidential_Term_boxplot.png" alt="Dow Jones Daily Change by Presidential Term">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                Percent Positive Close Days
+                <img class="img-fluid" src="Resources/assets:images/Percent_Positive_Close_Days.png" alt="Percent Positive Close Days">
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 

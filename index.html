@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <nav class="navbar">
-            <ul>                
+            <ul>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -26,60 +26,89 @@
                 <li>
                     <div class="dropdown">
                         <a class="dropbtn">Plots</a>
-                            <div class="dropdown-content">
-                                <a href="WebVisualizations/daily_close.html">Daily Close</a>
-                                <a href="WebVisualizations/daily_change.html">Daily Change</a>
-                                <a href="WebVisualizations/boxplot_election_to_inauguration.html">Box Plot: Election to Inauguration</a>
-                                <a href="WebVisualizations/boxplot_presidential_terms.html">Box Plot: Presidential Terms</a>
-                                <a href="WebVisualizations/percent_positive_close_days.html">Percent Positive Close Days</a>
-                            </div>
+                        <div class="dropdown-content">
+                            <a href="WebVisualizations/daily_close.html">Daily Close</a>
+                            <a href="WebVisualizations/daily_change.html">Daily Change</a>
+                            <a href="WebVisualizations/boxplot_election_to_inauguration.html">Box Plot: Election to Inauguration</a>
+                            <a href="WebVisualizations/boxplot_presidential_terms.html">Box Plot: Presidential Terms</a>
+                            <a href="WebVisualizations/percent_positive_close_days.html">Percent Positive Close Days</a>
+                        </div>
                     </div>
-                </li>    
+                </li>
             </ul>
         </nav>
-    </div>    
-              
+    <section>
         <h2>Overview</h2> 
+        <p> In this project, our team tested this hypothesis: If the President of the United States influences
+            the stock market, we would expect the frequency of positive or negative close days,
+            measured from election day to inauguration day and by total term of each President,
+            to be greater than the market historical average.</p>
+        <p> We tested our hypothesis using the Dow Jones Industrial Average Index from January 3, 2001 
+            through September 27, 2019.   
+        </p>
+        <p> To begin, here's a readily available chart of the Dow Jones Industrial Average Index
+            over the past 100 years.  (Source: https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart)
+        </p>
 
-        <article>
-        <a target="_blank" href="WebVisualizations/Resources/assets:images/Presidential_term_Daily_Close.png">
-            <img src="WebVisualizations/Resources/assets:images/Presidential_term_Daily_Close.png" alt="Daily Close">
-        </a>
-        <p class="png-titles">Daily Close</p>
-        </article>
-        <hr>
+        Dow Jones Industrial Average Index 100 years
+        <img class="img-fluid" src="WebVisualizations/Dow_Jones_Index_100_years.png" alt="Dow Jones 100 Years">
+        
+        <p> Because our project focuses on the last 20 years, here's a similar chart
+            for the Dow Jones Industrial Average Index over the past 20 years.  
+        </p>
 
-        <article>
-        <a target="_blank" href="WebVisualizations/Resources/assets:images/Presidential_term_Daily_Change.png">
-            <img src="WebVisualizations/Resources/assets:images/Presidential_term_Daily_Change.png" alt="Daily Change">
-        </a>
-        <p class="png-titles">Daily Change</p>
-        </article>
-        <hr>
+        Dow Jones Industrial Average Index 20 years
+        <img class="img-fluid" src="WebVisualizations/Dow_Jones_Index_100_years.png" alt="Dow Jones 100 Years">
 
-        <article>
-        <a target="_blank" href="WebVisualizations/Resources/assets:images/Percent_Positive_Close_Days.png">
-            <img src="WebVisualizations/Resources/assets:images/Percent_Positive_Close_Days.png" alt="Percent Positive Close Days">
-        </a>
-        <p class="png-titles">Percent Positive Close Days</p>
-        </article>
-        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                <p> This is our version of the 20-year chart, color-coded by Presidential term.
+                </p>    
+                Daily Close
+        
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Presidential_term_Daily_Close.png" alt="Daily Close">
+                </div>
+                
+                <div class="col-md-6">
+                <p> For details on the following charts, click on the corresponding chart title on the "Plots" link above.
+                </p>        
+                Daily Change
+            
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Presidential_term_Daily_Change.png" alt="Daily Change">
+                </div>                
+            </div>
+        </div>
 
-        <article>
-        <a target="_blank" href="WebVisualizations/Resources/assets:images/Election_to_Inauguration_boxplot.png">
-            <img src="WebVisualizations/Resources/assets:images/Election_to_Inauguration_boxplot.png" alt="Dow Jones Daily Change from Election to Inauguration">
-        </a>
-        <p class="png-titles">Dow Jones Daily Change from Election to Inauguration</p>
-        </article>
-        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                Dow Jones Daily Change from Election to Inauguration
 
-        <article>
-        <a target="_blank" href="WebVisualizations/Resources/assets:images/Presidential_Term_boxplot.png">
-            <img src="WebVisualizations/Resources/assets:images/Presidential_Term_boxplot.png" alt="Dow Jones Daily Change by Presidential Term">
-        </a>
-        <p class="png-titles">Dow Jones Daily Change by Presidential Term</p>
-        </article>
-        <hr>
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Election_to_Inauguration_boxplot.png" alt="Dow Jones Daily Change from Election to Inauguration">
+                </div>
+
+                <div class="col-md-6">
+                Dow Jones Daily Change by Presidential Term
+
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Presidential_Term_boxplot.png" alt="Dow Jones Daily Change by Presidential Term">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                Percent Positive Close Days
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Percent_Positive_Close_Days.png" alt="Percent Positive Close Days">
+                </div>
+            </div>
+            <p> Conclusion: Based on this data, we rejected the null-hypothesis, which was: If the President of the United States
+                does not influence the stock market, we would expect the frequency of positive and negative close days,
+                measured from election to inauguration and by total term of each President, to be equal to the market
+                historical average. 
+                </p>           
+        </div>
     </section>
 </body>
 

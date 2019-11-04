@@ -124,6 +124,13 @@ li:last-child {
   visibility: hidden;
 }
 
+
+
+.table-head {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
 /* Dropdown Button */
 .dropbtn {
   background-color: white;
@@ -165,11 +172,6 @@ li:last-child {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.table-head {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
 @media (max-width: 120px) {
   .navbar li {
     padding: 20px;
@@ -197,3 +199,7 @@ li:last-child {
     visibility: visible;
   }
 }
+  .graph-spin {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in;
+  }

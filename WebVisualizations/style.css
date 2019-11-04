@@ -28,6 +28,11 @@ body {
   height:auto;
 }
 
+.graph-spin {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in;
+}
+
 /* adding font sizes for the h1 and h2 elements */
 h1 {
   font-family: "Times New Roman", Times, serif;
@@ -160,10 +165,7 @@ img.resize {
     padding:10px;
   }
 
-  .graph-spin {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in;
-  }
+
 
   .navbar li {
     padding: 20px;

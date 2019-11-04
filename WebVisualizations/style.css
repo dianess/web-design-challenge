@@ -1,13 +1,61 @@
-.box {
-  height: 400px;
-  padding: 20px;
-  color: #fff;
-  background: deepskyblue;
+
+/* Giving the body the specified background color */
+body {
+  background: #f1f1f1;
+}
+
+.col-md-6 {
+  display: inline-block;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.container img {
+    display: inline-block;
+}
+
+/* Give the .dataframe bold titles */
+.dataframe thead th {
+  font-weight: bold;
 }
 
 .full-width {
   width:100%;
   height:auto;
+}
+
+/* adding font sizes for the h1 and h2 elements */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+/* Styling the header, giving it a height, a background color, and some top padding */
+.header {
+  height: 200px;
+  padding-top: 20px;
+  background: #cdcdcd;
+}
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 60px;
+  margin: 0;
+  color: #000;
+  text-align: center;
 }
 
 img.resize {
@@ -25,30 +73,7 @@ img.resize {
   margin-top: 80px;
 }
 
-/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
-body {
-  background: #f1f1f1;
-}
-
-h1 {
-  padding: 10px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-h2 {
-  padding: 0px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-/* Giving our navbar some padding and a background color */
+/* Giving the navbar some padding and a background color */
 .navbar {
   padding: 10px;
   background: #5191fd;
@@ -67,14 +92,10 @@ h3 {
   text-align: center;
 }
 
-li:last-child {
-  margin-right: 0;
-}
-
-/* Getting rid of the default link styles here */
+/* Getting rid of the default link styles here and naming font family */
 .navbar li a {
-  font-family: 'Times New Roman', Times, serif;
   color: #000;
+  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
 }
 
@@ -90,47 +111,12 @@ li:last-child {
   font-weight: bold;
 }
 
-/* Styling the header, giving it a height, a background color, and some top padding */
-.header {
-  height: 200px;
-  padding-top: 20px;
-  background: #cdcdcd;
-}
-
-/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
-.header h1 {
-  padding: 60px;
-  margin: 0;
-  color: #000;
-  text-align: center;
-}
-/* Decide about padding for the dataframe*/
-.dataframe {
-  padding: 0px;
-}
-/* Give the .dataframe bold titles */
-.dataframe thead th {
-  font-weight: bold;
-}
-
-.container {
-  margin-top: 10px;
-}
-.container img {
-    display: inline-block;
-    }
-}
-#nav-select {
-  visibility: hidden;
-}
-
-
-
 .table-head {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+/* Adding media queries to the drop-down menu on the plots tab */
+
 /* Dropdown Button */
 .dropbtn {
   background-color: white;
@@ -169,37 +155,21 @@ li:last-child {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-@media (max-width: 120px) {
-  .navbar li {
-    padding: 20px;
-  }
-
+@media (max-width: 480px) {
   .container row col {
     padding:10px;
   }
 
-  .col-md-6 {
-    display: inline-block;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
+  .graph-spin {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in;
   }
-  .post {
-    margin-right: 30px;
-    margin-left: 30px;
+
+  .navbar li {
+    padding: 20px;
   }
 
   .navbar ul {
     visibility: hidden;
   }
-
-  #nav-select {
-    visibility: visible;
-  }
 }
-  .graph-spin {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in;
-  }

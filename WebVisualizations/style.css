@@ -1,15 +1,17 @@
 
-/* Giving the body the specified background color */
+/* Give the body a white background color */
 body {
   background: #f1f1f1;
 }
 
+/* Use this class for graphs, to put them next to each other on large screens */
 .col-md-6 {
   display: inline-block;
   padding: 10px;
   font-family: 'Times New Roman', Times, serif;
 }
 
+/* Main container for the pages */
 .container {
   margin-top: 10px;
 }
@@ -23,17 +25,19 @@ body {
   font-weight: bold;
 }
 
+/* For autosizing the graphs as the screen size changes */
 .full-width {
   width:100%;
   height:auto;
 }
 
+/* Spins the graph when the page loads */
 .graph-spin {
   transform: rotate(360deg);
   transition: transform 0.5s ease-in;
 }
 
-/* adding font sizes for the h1 and h2 elements */
+/* Add font family, size, and weight for the h1 and h2 elements plus space around then */
 h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
@@ -48,14 +52,14 @@ h2 {
   padding: 0px;
 }
 
-/* Styling the header, giving it a height, a background color, and some top padding */
+/* Style the header, giving it a height, a background color, and some top padding */
 .header {
   height: 200px;
   padding-top: 20px;
   background: #cdcdcd;
 }
 
-/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+/* Center the h1 tag inside our header, give it a little padding, remove its margin */
 .header h1 {
   padding: 60px;
   margin: 0;
@@ -63,6 +67,7 @@ h2 {
   text-align: center;
 }
 
+/* Auto sizing the height of images */
 img.resize {
   width:200px;
   height:auto;
@@ -73,18 +78,18 @@ img.resize {
   margin-left: 20px;
 }
 
-)
+/* Add a margin at the top of the page so the words don't tough the top */
 .margin-top-80 {
   margin-top: 80px;
 }
 
-/* Giving the navbar some padding and a background color */
+/* Give the navbar some padding and a background color */
 .navbar {
   padding: 10px;
   background: #5191fd;
 }
 
-/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+/* Make the navbar li's inline-block elements */
 .navbar li {
   display: inline-block;
   padding: 5px;
@@ -97,7 +102,7 @@ img.resize {
   text-align: center;
 }
 
-/* Getting rid of the default link styles here and naming font family */
+/* Get rid of the default link styles here and name font family */
 .navbar li a {
   color: #000;
   font-family: 'Times New Roman', Times, serif;
@@ -109,6 +114,7 @@ img.resize {
   font-weight: bold;
 }
 
+/* Graph titles font style */
 .png-titles {
   padding 5px;
   font-family: "Times New Roman", Times, serif;
@@ -116,11 +122,12 @@ img.resize {
   font-weight: bold;
 }
 
+/* Font type for data table column headers */
 .table-head {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Adding media queries to the drop-down menu on the plots tab */
+/* Add media queries to the drop-down menu on the plots tab */
 
 /* Dropdown Button */
 .dropbtn {
@@ -160,18 +167,12 @@ img.resize {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-@media (max-width: 480px) {
+@media (min-width: 600px) {
   .container row col {
     padding:10px;
   }
 
-
-
   .navbar li {
     padding: 20px;
-  }
-
-  .navbar ul {
-    visibility: hidden;
   }
 }
